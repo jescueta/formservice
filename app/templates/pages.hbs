@@ -1,0 +1,7 @@
+<ul class="nav nav-pills nav-justif">
+ {{#each model}}
+ <li>{{#link-to 'page' this}}{{this.name}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}

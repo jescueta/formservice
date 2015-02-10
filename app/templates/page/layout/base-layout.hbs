@@ -1,0 +1,10 @@
+{{#if isPageFlow}}
+  {{render 'page.layout.panel' subPages}}
+{{else}}
+  {{#if isPageBox}}
+    {{render 'page.layout.box' subPages}}
+  {{/if}}
+  {{#if isPage3}}
+    {{render 'page.layout.box-3' subPages}}
+  {{/if}}
+{{/if}}

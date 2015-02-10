@@ -1,0 +1,15 @@
+
+<div>
+  <label {{bind-attr for="name"}}>{{label}}</label>
+</div>
+<div>
+  <label class="radio-inline">
+    <input type="radio" {{bind-attr name="name"}} {{bind-attr id="id"}} value="Yes" checked>
+      Yes
+  </label>
+
+  <label class="radio-inline">
+    <input type="radio" {{bind-attr name="name"}} {{bind-attr id="id"}} value="No" >
+      No
+  </label>
+</div>

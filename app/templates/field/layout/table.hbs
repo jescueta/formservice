@@ -1,0 +1,29 @@
+<table class="table table-hover">
+    <thead>
+    <tr>
+    {{#each field in fields}}
+        <th>{{field.label}}</th>
+    {{/each}}
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        {{#each field in fields}}
+        <td>
+            <div class="form-group">
+                <input name="{{field.name}}" type="text" class="form-control"/>
+            </div>
+        </td>
+        {{/each}}
+    </tr>
+    <tr>
+        {{#each field in fields}}
+        <td>
+            <div class="form-group">
+                <input name="{{field.name}}" type="text" class="form-control"/>
+            </div>
+        </td>
+        {{/each}}
+    </tr>
+    </tbody>  
+</table>

@@ -1,0 +1,36 @@
+{{#if isIndependent}}
+    {{#if label}}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <strong>{{label}}</strong>
+      </div>
+      <div class="panel-body">
+    {{/if}}
+  {{else}}
+     
+  {{/if}}
+
+
+{{#if isFlow}}
+  {{render 'field.layout.panel' this}}
+{{else}}
+    {{#if isTable}}
+      {{render 'field.layout.table' this}}
+    {{else}}
+      {{#if isBox}}
+        {{render 'field.layout.box' this}}
+      {{/if}}
+      
+      {{#if isBox3}}
+        {{render 'field.layout.box-3' this}}
+      {{/if}}
+    {{/if}}
+{{/if}}
+
+
+{{#if isIndependent}}
+    {{#if label}}
+      </div>
+      </div>
+    {{/if}}
+  {{/if}}

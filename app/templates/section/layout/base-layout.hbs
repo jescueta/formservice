@@ -1,0 +1,10 @@
+{{#if isSectionFlow}}
+  {{render 'section.layout.panel' sections}}
+{{else}}
+  {{#if isSectionBox}}
+    {{render 'section.layout.box' sections}}
+  {{/if}}
+  {{#if isSectionBox3}}
+    {{render 'section.layout.box-3' sections}}
+  {{/if}}
+{{/if}}

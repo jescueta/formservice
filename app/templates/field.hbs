@@ -1,0 +1,21 @@
+  <div class="form-group"> 
+        {{#if field.isTextField}}
+          {{render 'field.components.textfield' field}}
+        {{/if}}
+
+        {{#if field.isDate}}
+          {{render 'field.components.datefield' field}}
+        {{/if}}
+
+        {{#if field.isTextArea}}
+          {{render 'field.components.textarea' field}}
+        {{/if}}
+
+        {{#if field.isComboBox}}
+          {{render 'field.components.combobox' field}}    
+        {{/if}}
+
+        {{#if field.isRadio}}
+          {{render 'field.components.radio' field}} 
+        {{/if}}
+    </div>
